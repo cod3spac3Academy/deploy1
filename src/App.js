@@ -24,6 +24,7 @@ function App() {
       }>
         <Routes>
           <Route path="/" element={<TasksManager />}></Route>
+          <Route path="/deploy1" element={<TasksManager />}></Route>
           <Route path="/about" element={<About />}></Route>
           <Route path="/login" element={<LoginPage />}></Route>
         </Routes>
