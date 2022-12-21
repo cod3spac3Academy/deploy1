@@ -1,0 +1,38 @@
+.task-item {
+  border-bottom: 1px solid #e4e4e4;
+  background-color: #e1e1e1;
+  background-color: #e0e0e0;
+  padding: 1rem 2rem;
+  cursor: pointer;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.title {
+  width: 80%;
+  padding: 1em;
+  transition: all 0.3s ease;
+}
+.even {
+  background-color: #FAFAFA;
+}
+.actions {
+  flex-shrink: 1;
+  padding: .7em;
+  border-radius: 50%;
+  content:flex-center '../../index.css';
+  width: 40px;
+  height: 40px;
+  margin-right: 1em;
+}
+.edit-mode {
+  background-color: #e0e0e0;
+  border-radius: .3rem;
+}
+
+.edit {
+  background-color: #4CAF50;
+}
+.delete {
+  background-color: #f44336;
+}

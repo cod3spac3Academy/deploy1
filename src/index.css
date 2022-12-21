@@ -1,0 +1,118 @@
+:root {
+  box-sizing: border-box;
+  font-size: 0.785rem;
+}
+
+*,
+::before,
+::after {
+  box-sizing: inherit;
+  border: 0;
+  margin: 0;
+  padding: 0;
+  outline: none 0;
+  list-style-type: none;
+}
+
+body {
+  font-family: "Rubik", sans-serif;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Titillium Web", sans-serif;
+}
+
+h1 {
+  font-size: 3.5rem;
+}
+
+h2 {
+  font-size: 2.25rem;
+}
+
+h3 {
+  font-size: 1.5rem;
+}
+
+h4 {
+  font-size: 1.1rem;
+}
+
+h5 {
+  font-size: 0.9rem;
+}
+
+h6 {
+  font-size: 0.7rem;
+}
+.flex-center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.full-size {
+  width: 100%;
+  height: 100vh;
+}
+
+/* For reviewing */
+header {
+  background-color: #1e1e1e;
+  color: #6b9a34;
+}
+header,
+header nav ul {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1em
+}
+
+header nav ul li:not(:last-child) {
+  margin-right: 1em;
+}
+
+header nav ul li a {
+  background-color: #f1f1f1;
+  padding: 0.5em;
+  border-radius: 0.5em;
+  color: #333;
+}
+
+main {
+  padding: 1em;
+  background-color: #252525;
+  color: #fff;    
+  display: flex;
+  min-height: 100vh;
+}
+h2 {
+  color: #30a72a;
+}
+aside h2{
+  min-width: 30vw;
+}
+main .container {
+  flex-direction: column;
+}
+
+main a,
+aside li a{
+  margin-right: 1em;
+  color: #a6c017;
+  text-decoration: underline;
+  transition: all 0.3s ease-in-out;
+}
+
+.active {
+  color: #fff;
+  background-color: #30a72a;
+  border-radius: .3rem;
+  padding: .7em 1em;
+  transition: all 0.3s ease-in-out;
+}

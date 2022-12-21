@@ -1,0 +1,81 @@
+form .form-control {
+    background-color: #445867 !important;
+    color: #DEDBDB !important;
+    width: 100%;
+    padding: .5em 1em;
+    border-radius: .4rem;
+    font-size: 1.3rem;
+    margin-bottom: .8em;
+}
+
+form .remember {
+    position: relative;
+    margin-bottom: 2em;
+}
+
+form .remember label {
+    position: relative;
+    padding-left: 23px;
+    font-size: 1.5rem;
+}
+
+form .remember input[type="checkbox" i]:not(:checked),
+form .remember input[type="checkbox" i]:checked {
+    position: absolute;
+    left: -9999px;
+}
+form .remember input[type="checkbox" i]:checked+label::before,
+form .remember input[type="checkbox" i]:not(:checked)+label::before {
+    background: transparent;
+    border: 2px solid #fff;
+    border-radius: .250rem;
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 5px;
+    width: 18px;
+    height: 18px;
+    z-index: 1;
+}
+
+
+form .remember input[type="checkbox" i]:checked+label::after,
+form .remember input[type="checkbox" i]:not(:checked)+label::after {
+    content: "\2713";
+    font-weight: 300;
+    background-color: #fff;
+    color: #23394A;
+    width: 16px;
+    height: 16px;
+    padding-left: 3px;
+    position: absolute;
+    top: 6px;
+    left: 1px;
+    font-size: 1.2rem;
+    line-height: 1em;
+    opacity: 1;
+    transform: scale(1);
+    border-radius: .250rem;
+    transition: all 0.2s ease;
+}
+form .remember input[type="checkbox" i]:not(:checked)+label::after {
+    opacity: 0;
+    transform: scale(0);
+    color: #23394A;
+    content: "";
+}
+form .form-button button {
+    font-weight: 400;
+    background-color: #fff;
+    color: #23394A;
+    box-shadow: 0 0 0 rgb(0 0 0 / 16%);
+    padding: .5em 1.5em;
+    font-size: 1.1rem;
+    margin-right: .8em;
+    border-radius: .4rem;
+}
+form .form-button a {
+    color: #fff;
+    font-size: 1.1rem;
+    font-weight: 700;
+}

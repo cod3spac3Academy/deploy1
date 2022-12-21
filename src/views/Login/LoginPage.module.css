@@ -1,0 +1,92 @@
+.login {
+    padding: 0 !important;
+}
+.container {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+}
+
+.container>div {
+    width: 100%;
+}
+
+.container .bgForm {
+    display: none;
+    background-image: url(../../assets/bg-login.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.container .formContainer {
+    background-color: #23394A;
+    padding: 2em;
+    z-index: 10;
+}
+
+.container .formWrapper {
+    width: 100%;
+    max-width: 340px;
+    margin: 0 auto;
+    color: #fff;
+    font-family: "Lato", sans-serif;
+}
+
+.container .formWrapper h2 {
+    line-height: 1.2;
+    font-weight: 900;
+    font-size: 2em;
+    margin-bottom: .5em;
+}
+
+.container .formWrapper p {
+    font-size: 1.5rem;
+    font-weight: 300;
+    line-height: 1.1;
+    margin-bottom: 1.2em;
+}
+
+.container .login-links {
+    margin-bottom: 2.5em;
+}
+
+.container .login-links a {
+    font-size: 1.3rem;
+    font-weight: 300;
+    color: #fff;
+    margin-right: 20px;
+    position: relative;
+    color: #fff;
+}
+
+.container .login-links a.active {
+    font-weight: 700;
+}
+
+.container .login-links a:after {
+    position: absolute;
+    content: "";
+    width: 100%;
+    height: 2px;
+    left: 0;
+    bottom: -10px;
+    background-color: rgba(255, 255, 255, 0.5);
+    font-weight: 300;
+}
+
+.container .login-links a.active:after {
+    background-color: #fff;
+}
+
+
+@media screen and (min-width: 992px) {
+    .container>div {
+        width: 50%;
+    }
+
+    .container .bgForm {
+        display: inline-block;
+    }
+}

@@ -1,0 +1,144 @@
+.info-container {
+    padding: 1em;
+}
+
+.info-container h3,
+.info-container p {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 300;
+    text-align: center;
+}
+
+.info-container h3 {
+    font-weight: 400;
+}
+
+.info-container p {
+    font-size: 1.3rem;
+}
+
+.hire {
+    display: flex;
+    justify-content: space-between;
+    font-size: 1.2rem;
+    margin: 2em 0;
+}
+
+.hire span.price {
+    color: #56bb4d;
+    font-weight: 600;
+}
+
+.hire button.hire-button {
+    background-color: #2dced4;
+    font-size: 1.3rem;
+    border-radius: 100px;
+    color: #ffffff;
+    display: inline-block;
+    padding: .5em 1.4em;
+}
+
+.rating {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    margin: 1em 0;
+}
+
+.rating>div {
+    margin-right: .5em;
+    font-size: 1.3em;
+}
+
+.rating>div:first-of-type {
+    color: #fff !important;
+    padding: .1em .2em;
+    background-color: #fdbd45;
+}
+
+.rating>div:not(:last-of-type) {
+    color: #fdbd45;
+}
+
+.rating>div>.fa-star {
+    margin-right: .2em;
+}
+
+.icons {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    margin: 1em 0;
+}
+
+.icons * {
+    color: #8cc986;
+    font-size: 1.2rem;
+}
+
+.icons .verified {
+    font-size: 2.2rem;
+    margin-right: .5em;
+    position: relative;
+    padding-right: 1.7em;
+}
+
+.icons .verified .fa-circle-check {
+    font-size: 2rem;
+}
+
+.icons .verified span {
+    font-size: .885rem;
+    background-color: #8cc986;
+    color: #fff;
+    padding: 0 6px 0 8px;
+    border-radius: .8rem;
+    position: absolute;
+    top: 8px;
+    left: 18px;
+    font-weight: 400;
+}
+
+.icons .circle {
+    margin-right: .8em;
+    font-weight: 900;
+    border: 1px solid #8cc986;
+    border-radius: 50%;
+    width: 32px;
+    height: 32px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.icons span.not-available {
+    border: 1px solid #bcbcbc;
+}
+
+.icons span.not-available * {
+    color: #bcbcbc;
+}
+
+@media (min-width: 992px) {
+    .rating,.icons {
+        flex-wrap: wrap;
+    }
+    .rating>div {
+        margin-bottom: 1em;
+        font-size: 1.3em;
+    }
+    .icons {
+        justify-content: space-evenly  ;
+    }
+    .icons .verified {
+        margin:0 30% .5em;
+    }
+}
+@media (min-width: 1200px) {
+    .icons {
+        justify-content: flex-start  ;
+    }
+    .icons .verified {
+        margin:0 .5em 0 0;
+    }
+  }

@@ -1,0 +1,29 @@
+.form-control input {
+  display: block;
+  border-radius: .3rem;
+  /* by box-shadows.co #65 */
+  padding: 0.5em;
+  margin-bottom: 1.5em;
+  width: 100%;
+  border: 1px solid #ccc;
+  font: inherit;
+  line-height: 1.5em;
+  box-shadow: rgba(17, 17, 26, 0.05) 0px 1px 0px, rgba(17, 17, 26, 0.1) 0px 0px 8px;
+  transition: all .3s ease-out;
+}
+
+.form-control input:focus {
+  background: #4954ac;
+  border-color: #2A41E8;
+  box-shadow: rgba(42, 65, 232, 0.05) 0px 1px 0px, rgba(100, 118, 234, 0.1) 0px 0px 8px;
+  transition: all .3s ease-out;
+}
+
+.form-control.not-fullfilled input {
+  border-color: #cc3300;
+  background: #ff9966;
+}
+
+.form-control.not-fullfilled label {
+  color: #cc3300;
+}
